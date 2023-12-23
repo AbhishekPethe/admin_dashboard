@@ -14,7 +14,7 @@ const TopDeals = () => {
                   return (
                       <div key={i} className='flex  justify-between items-center text-sm' >
                           {/* image */}
-                          <div className='rounded-full overflow-hidden w-[40px] h-[40px] md:hidden lg:block'>
+                          <div className='rounded-full overflow-hidden w-[40px] h-[40px] max-[400px]:hidden '>
                               {/* <img src={each.img} alt="" className='object-cover w-full h-full' /> */}
                               <Image
                                   src={each.img}
