@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <div className='w-max border-2px border-soft-bg py-1 px-5'>
             <Menu />
           </div>
-          <div className='py-1 px-5 w-full'>
+          <div className='py-1 lg:px-5 w-full'>
             {children}
           </div>
         </div>
