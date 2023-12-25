@@ -2,9 +2,9 @@
 import React from 'react'
 import Footer from './Footer'
 import TopDeals from './TopDeals'
+import TotalUsers from './TotalUsers'
 
-let arr = [<TopDeals /> , 2, 3,4,5,6,7,8,9 ]
-
+let arr = [<TopDeals />, <TotalUsers />, 3, 4, 5, 6, 7, 8, 9]
 
 const Default = () => {
   return (
