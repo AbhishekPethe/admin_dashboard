@@ -2,13 +2,19 @@
 import React from 'react'
 import Footer from './Footer'
 import TopDeals from './TopDeals'
-import TotalUsers from './TotalUsers'
+import TopBoxComponent from './TopBoxComponent'
+import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduct, chartBoxRevenue, chartBoxUser } from '../data'
+import BarChartComponent from './BarChartComponent'
+import PieChartComponent from './PieChartComponent'
+import AreaChartComponent from './AreaChartComponent'
 
-let arr = [<TopDeals />, <TotalUsers />, 3, 4, 5, 6, 7, 8, 9]
+let arr = [<TopDeals />,
+<TopBoxComponent data={chartBoxUser} />, <TopBoxComponent data={chartBoxProduct} />, <PieChartComponent />,
+<TopBoxComponent data={chartBoxConversion} />, <TopBoxComponent data={chartBoxRevenue} />, <AreaChartComponent />, <BarChartComponent data={barChartBoxVisit} />, <BarChartComponent data={barChartBoxRevenue} />]
 
 const Default = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 grid-flow-dense auto-rows-[minmax(180px,auto)]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 grid-flow-dense auto-rows-[minmax(190px,auto)]'>
       {
         arr.map((each , i) => {
           return (

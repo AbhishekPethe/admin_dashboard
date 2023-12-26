@@ -9,6 +9,11 @@ import { HiMenuAlt2, HiOutlineNewspaper } from "react-icons/hi";
 import { IoCalendarOutline } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
 import { IoCloudUploadOutline } from "react-icons/io5";
+import { PiUsersBold , } from "react-icons/pi";
+import { LuShoppingBag } from "react-icons/lu";
+import { FaDollarSign } from "react-icons/fa6";
+import { CgMathPercent } from "react-icons/cg";
+
 
 export const menu = [
     {
@@ -180,10 +185,10 @@ export const menu = [
   ];
   
   export const chartBoxUser = {
-    color: "#8884d8",
-    icon: "/userIcon.svg",
+    color: "blue",
+    icon: <PiUsersBold />,
     title: "Total Users",
-    number: "11.238",
+    number: "11,238",
     dataKey: "users",
     percentage: 45,
     chartData: [
@@ -198,8 +203,8 @@ export const menu = [
   };
   
   export const chartBoxProduct = {
-    color: "skyblue",
-    icon: "/productIcon.svg",
+    color: "orange",
+    icon: <LuShoppingBag />,
     title: "Total Products",
     number: "238",
     dataKey: "products",
@@ -216,7 +221,7 @@ export const menu = [
   };
   export const chartBoxRevenue = {
     color: "teal",
-    icon: "/revenueIcon.svg",
+    icon: <FaDollarSign />,
     title: "Total Revenue",
     number: "$56.432",
     dataKey: "revenue",
@@ -232,8 +237,8 @@ export const menu = [
     ],
   };
   export const chartBoxConversion = {
-    color: "gold",
-    icon: "/conversionIcon.svg",
+    color: "yellow",
+    icon: <CgMathPercent />,
     title: "Total Ratio",
     number: "2.6",
     dataKey: "ratio",
@@ -256,15 +261,15 @@ export const menu = [
     chartData: [
       {
         name: "Sun",
-        profit: 4000,
+        profit: 2000,
       },
       {
         name: "Mon",
-        profit: 3000,
+        profit: 4000,
       },
       {
         name: "Tue",
-        profit: 2000,
+        profit: 3000,
       },
       {
         name: "Wed",
@@ -272,15 +277,15 @@ export const menu = [
       },
       {
         name: "Thu",
-        profit: 1890,
+        profit: 3890,
       },
       {
         name: "Fri",
-        profit: 2390,
+        profit: 1390,
       },
       {
         name: "Sat",
-        profit: 3490,
+        profit: 2490,
       },
     ],
   };
